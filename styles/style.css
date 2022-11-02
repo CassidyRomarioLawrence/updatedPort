@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap');
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+#about{
+    text-align: center;
+}
+.my-image{
+    border-radius: 4px;
+    border: 2.5px solid black;
+}
