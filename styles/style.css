@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaushan+Script&family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaushan+Script&family=Roboto:wght@900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 body {
-  font-family: 'Fjalla One',sans-serif;
+  font-family: "Fjalla One", sans-serif;
   text-shadow: 3px 3px 3px grey;
 }
 #about {
@@ -15,12 +15,17 @@ a {
   text-decoration: none;
   color: black;
 }
+#testimonials h4 {
+  animation: fun;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
 
 .card {
   padding-left: auto;
   padding-right: auto;
   min-height: 300px;
-  margin-top: 15px;
+  margin-top: 8px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -webkit-transition: 0.25s box-shadow;
   transition: 0.25s box-shadow;
@@ -38,6 +43,7 @@ a {
 
 .card-img-top {
   padding: 20px;
+  margin: auto;
 }
 
 .col-xs-12 {
@@ -56,23 +62,28 @@ a {
 .btn {
   margin-top: 20px;
 }
-#testimonials{
+#testimonials {
   background-image: url(../assets/pexels-lumn-167699.jpg);
-  background-size:cover;
+  background-size: cover;
+  scroll-margin-block: 75px;
 }
-#resume{
+#resume {
   background-image: url(../assets/pexels-nico-brüggeboes-1003124.jpg);
   background-size: cover;
   padding-bottom: 10px;
+  scroll-margin-block: 75px;
 }
-.progress{
+.progress {
   border: 2px solid black;
 }
-#about,#projects,#contact{
-  background-color: rgb(224,224,224);
+#about,
+#projects,
+#contact {
+  background-color: rgb(224, 224, 224);
   padding-bottom: 10px;
+  scroll-margin-block: 75px;
 }
-.carousel-caption{
+.carousel-caption {
   text-shadow: 3px 3px 3px grey;
 }
 #resume div {
@@ -91,22 +102,79 @@ button {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-size: 15px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   margin: 5px 0;
- }
- 
- button:hover {
+}
+
+button:hover {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
- }
- 
- button:active {
+}
+
+button:active {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
- }
+}
+
+@media (max-width: 360px) {
+  #about p,
+  #resume table,
+  #projects,
+  #testimonials,
+  #contact {
+    font-size: 13px;
+  }
+  .my-image {
+    height: 7rem;
+  }
+  .socials {
+    display: contents;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1059px) {
+
+  #about p,
+  #resume table,
+  #projects,
+  #testimonials,
+  #contact {
+    font-size: 15px;
+  }
+
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
+
+
+@keyframes fun {
+  0% {
+    color: black;
+  }
+
+  25% {
+    color: purple;
+  }
+
+  50% {
+    color: lightcoral;
+  }
+
+  75% {
+    color: lightseagreen;
+  }
+
+  100% {
+    color: lightgreen;
+  }
+}
