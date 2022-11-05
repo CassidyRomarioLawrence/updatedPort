@@ -63,12 +63,12 @@ a {
   margin-top: 20px;
 }
 #testimonials {
-  background-image: url(../assets/pexels-lumn-167699.jpg);
+  background-image: url(../assets/images/pexels-lumn-167699.jpg);
   background-size: cover;
   scroll-margin-block: 75px;
 }
 #resume {
-  background-image: url(../assets/pexels-nico-brüggeboes-1003124.jpg);
+  background-image: url(../assets/images/pexels-nico-brüggeboes-1003124.jpg);
   background-size: cover;
   padding-bottom: 10px;
   scroll-margin-block: 75px;
@@ -138,7 +138,7 @@ button:active {
     font-size: 13px;
   }
 }
-@media (max-width: 1059px) {
+/* @media (max-width: 1059px) {
 
   #about p,
   #resume table,
@@ -154,7 +154,7 @@ button:active {
     flex-direction: column;
     font-size: 15px;
   }
-}
+} */
 
 
 @keyframes fun {
@@ -178,3 +178,4 @@ button:active {
     color: lightgreen;
   }
 }
+
