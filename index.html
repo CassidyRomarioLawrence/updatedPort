@@ -64,8 +64,13 @@
       </div>
     </section>
     <section id="about">
-      <h2 class="display-2 text-center bg-dark text-light">About Myself:</h2>
-      <img class="my-image img-fluid" src="/assets/images/profile-image.png" alt="profile-photo" style="width: 20vw" />
+    <h2 class="display-2 text-center bg-dark text-light">About Myself:</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-6">
+      <img class="my-image img-fluid" src="/assets/images/profile-image.png" alt="profile-photo"/>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-6 d-flex align-items-center">
       <p class="lead text-center">
         My name is Cassidy Romario Lawrence, I'm a 24-year-old male currently
         studying coding <br />
@@ -80,6 +85,9 @@
         acquired. <br />
         As well as learning new ones to improve myself and grow my skill set.
       </p>
+    </div>
+  </div>
+</div>
     </section>
     <!-- Resume -->
     <section id="resume">
@@ -140,7 +148,7 @@
           </tr>
           <tr>
             <td>Oaklands High School</td>
-            <td>Secreterial Assistant & I.T Support</td>
+            <td>Secretarial Assistant & I.T Support</td>
             <td>2022</td>
           </tr>
         </tbody>
@@ -169,7 +177,7 @@
           </tr>
         </tbody>
       </table>
-                <a href="/assets/pdf/CV of Cassidy Lawrence (2).docx.pdf" download="CV" target="_blank"><button>DOWNLOAD CV</button></a>
+                <a href="/assets/pdf/CV of Cassidy Lawrence (2).docx.pdf" download="CV" target="_blank"><button class="mx-2">DOWNLOAD CV</button></a>
     </section>
     <!-- Projects -->
     <section id="projects">
@@ -206,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="clearfix hidden-sm-down hidden-lg-up"></div>
+          <!-- <div class="clearfix hidden-sm-down hidden-lg-up"></div> -->
           <div class="col-xs-12 col-md-6 col-lg-3">
             <div class="card">
               <img class="card-img-top" src="/assets/images/Ecommerce.png" alt="Card image cap" />
@@ -234,7 +242,7 @@
             <div class="card">
               <img class="card-img-top w-75" src="/assets/images/Sive profile.png" alt="Card image cap" />
               <div class="card-block">
-                <h4 class="card-title">Sive Shabane</h4>
+                <h4 class="card-title">Sive Shabane - Peer</h4>
                 <p class="card-text">
                   Cassidy is very dedicated in his work. He remains fully focused on the task at hand till completion.
                   He is a great team
@@ -251,7 +259,7 @@
             <div class="card">
               <img class="card-img-top w-100" src="/assets/images/JoelProfile.jpg" alt="Card image cap" />
               <div class="card-block">
-                <h4 class="card-title">Joel Mukanya</h4>
+                <h4 class="card-title">Joel Mukanya - Lecturer</h4>
                 <p class="card-text">
                   Cassidy is a very creative, go-getter, and well-behaved student. He does enjoy working with his
                   classmates and works
@@ -268,7 +276,7 @@
             <div class="card">
               <img class="card-img-top w-75" src="assets/images/Meezaan Profile.png" alt="Card image cap" />
               <div class="card-block">
-                <h4 class="card-title">Meezaan Davids</h4>
+                <h4 class="card-title">Meezaan Davids - Peer</h4>
                 <p class="card-text">
                   Cassidy is a very smart and open minded guy. He has a "keep to himself" character but once engaging in
                   conversations, he
@@ -285,7 +293,7 @@
             <div class="card">
               <img class="card-img-top w-75" src="/assets/images/Mu-een Profile.png" alt="Card image cap" />
               <div class="card-block">
-                <h4 class="card-title">Mu-een Slamat</h4>
+                <h4 class="card-title">Mu-een Slamat - Peer</h4>
                 <p class="card-text">
                   Cassidy has been a good friend of mine for 2 years and I can honestly say that he is open-minded ,
                   friendly ,
@@ -305,7 +313,7 @@
             <div class="card">
               <img class="card-img-top w-75" src="/assets/images/Brogan Profile.jpg" alt="Card image cap" />
               <div class="card-block">
-                <h4 class="card-title">Brogan Gys</h4>
+                <h4 class="card-title">Brogan Gys - Peer</h4>
                 <p class="card-text">
                   Cassidy is someone who always sticks to the task at hand, and gives 100% to all his tasks / projects.
                   He has great
@@ -322,7 +330,8 @@
     <!-- Contact Form -->
     <section id="contact">
       <h2 class="display-2 text-center bg-dark text-light">Contact:</h2>
-      <h6 class="display-6 mt-3 text-center">Get In Touch</h6>
+      <h6 class="display-6 mt-3 text-center">Get in touch:</h6>
+      <p class="lead mt-3 text-center text-bg-success">By using the form below or any of the preferred clickable social media links</p>
       <form id="contact-form" method="POST" action="https://formspree.io/f/xqkjbrag" role="form">
         <div class="messages"></div>
         <div class="controls">
@@ -378,20 +387,22 @@
         </div>
       </form>
       <!-- Socials -->
-      <ul class="socials text-center p-5">
-        <li class="list-inline-item mx-5">
-          <i class="bi bi-whatsapp "></i><a href="https://api.whatsapp.com/send?phone=%2B27628124426&text&app_absent=0"
-            target="_blank">Whatsapp | 062 812 4426</a>
-        </li>
-        <li class="list-inline-item mx-5">
-          <i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/cassidy-romario-lawrence-b671b21b8/"
-            target="_blank">LinkedIn | Cassidy Romario Lawrence</a>
-        </li>
-        <li class="list-inline-item mx-5">
-          <i class="bi bi-instagram"></i><a href="https://www.instagram.com/cassidyromariolawrence/?next=%2F"
-            target="_blank">Instagram | cassidyromariolawrence</a>
-        </li>
-      </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <i class="bi bi-whatsapp "></i><a href="https://api.whatsapp.com/send?phone=%2B27628124426&text&app_absent=0"
+      target="_blank">Whatsapp | 062 812 4426</a>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/cassidy-romario-lawrence-b671b21b8/"
+      target="_blank">LinkedIn | Cassidy Romario Lawrence</a>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <i class="bi bi-instagram"></i><a href="https://www.instagram.com/cassidyromariolawrence/?next=%2F"
+      target="_blank">Instagram | @cassidyromariolawrence</a>
+    </div>
+  </div>
+</div>
     </section>
   </main>
   <footer class="text-center bg-dark text-light p-1">

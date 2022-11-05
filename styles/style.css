@@ -86,13 +86,6 @@ a {
 .carousel-caption {
   text-shadow: 3px 3px 3px grey;
 }
-#resume div {
-  width: 25%;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 36px;
-}
 .card-link{
   display: inline-flex;
 }
@@ -172,39 +165,45 @@ button {
   font-weight: bold;
  }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   #about p,
   #resume table,
   #projects,
   #testimonials,
-  #contact {
+  #contact,button
+   {
     font-size: 13px;
   }
-  .my-image {
-    height: 7rem;
-  }
   .socials {
-    display: contents;
     font-size: 13px;
   }
 }
-/* @media (max-width: 1059px) {
-
+@media screen and (min-width: 360px) {
   #about p,
   #resume table,
   #projects,
   #testimonials,
-  #contact {
+  #contact,button
+   {
     font-size: 15px;
   }
-
-
   .socials {
-    display: flex;
-    flex-direction: column;
     font-size: 15px;
   }
-} */
+}
+@media screen and (min-width: 1080px) {
+  #about p,
+  #resume table,
+  #projects,
+  #testimonials,
+  #contact,button
+   {
+    font-size: 18px;
+  }
+  .socials {
+    font-size: 13px;
+  }
+}
 
 
 @keyframes fun {
